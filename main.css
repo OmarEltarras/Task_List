@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form input{
+    border-radius: 6px;
+}
+form input:focus{
+    outline: none;
+}
+form input[type="text"]{
+    flex:1;
+    margin-right: 10px;
+    height: 36px;
+    padding: 5px 15px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+
+}
+form input[type="submit"]{
+    height: 36px;
+    padding: 5px 15px;
+    cursor: pointer;
+    background-color: #198754;
+    color: white;
+    border: none;
+    transition: .5s;
+}
+form input[type="submit"]:hover{
+    background-color: #157347;
+}
+.task{
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+.del-btn{
+    margin-left: auto;
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .5s;
+}
+.del-btn:hover{
+    background-color: #bb2d3b;
+}
+input[type='checkbox']:checked +span{
+    text-decoration: line-through;
+}
